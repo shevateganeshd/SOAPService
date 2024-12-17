@@ -1,0 +1,27 @@
+﻿@model SOAPMathsServiceConsumerWebApp.Models.Operations
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h5>Welcome</h5>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+
+<h5>Operations Results</h5>
+
+@if (Model != null)
+{
+    <p>Sum: @Model.Sum</p>
+    <p>Subtraction: @Model.Sub</p>
+    <p>Multiplication: @Model.Mul</p>
+    <p>Division: @Model.Div</p>
+}
+else
+{
+
+}
+
